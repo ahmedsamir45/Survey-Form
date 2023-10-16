@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title" >Survey Form</h1>
+    <p id="description" class="desc">Thank you for taking the time to help us improve the platform</p>
+    <form action="" id="survey-form">
+
+        <label  for="name">Enter Your First Name: <input  id="name"   name="first-name" type="text" required placeholder ="Yor First Name" /></label>
+        <label  id="name-label">Enter Your Second Name: <input   id="name-label"  name="first-name" type="text" required placeholder ="Yor Second Name" /></label>
+       
+        
+        <label for="email">Enter Your Email: <input  id="email"  name="email-label" type="email" required  placeholder ="Your First Email" /></label>
+        <label id="email-label">Enter Your Email: <input   id="email-label" name="email-label" type="email"   placeholder ="Your Second Email" /></label>
+        <label for="number" >Input your age (years): <input id="number"  type="number" name="age" min="13" max="120" placeholder ="Your Age" /></label>
+        <label id="number-label" >Input your Number: <input  id="number-label" type="number" name="number" min="13" max="120" placeholder ="Your Number" /></label>
+        
+      </fieldset>
+    <fieldset>
+
+    
+    <label for="dropdown">Gender
+        <select id="dropdown" name="referrer">
+    <option class="inline" value="">(select one)</option>
+    <option class="inline" value="1">Male</option>
+    <option class="inline" value="2">Female</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+       
+            <p>Would you recommend our organization to a friend?</p>
+            <label>
+              <input name="user-recommend" value="definitely" type="radio" class="inline" checked="">Definitely</label>
+            <label>
+              <input name="user-recommend" value="maybe" type="radio" class="inline">Maybe</label>
+  
+            <label><input name="user-recommend" value="not-sure" type="radio" class="inline">Not sure</label>
+        
+    </fieldset>
+
+<fieldset>
+
+        <p>
+          What would you like to see improved?
+        
+        </p>
+
+        <label><input name="prefer" value="front-end-projects" type="checkbox" class="inline" >Front-end Projects</label>
+        <label><input name="prefer" value="back-end-projects" type="checkbox" class="inline" >Back-end Projects</label>
+        <label><input name="prefer" value="data-visualization" type="checkbox" class="inline" >Data Visualization</label>
+        <label><input name="prefer" value="challenges" type="checkbox" class="inline" >Challenges</label>
+        <label><input name="prefer" value="open-source-community" type="checkbox" class="inline" >Open Source Community</label>
+        <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="inline" >Gitter help rooms</label>
+        <label><input name="prefer" value="videos" type="checkbox" class="inline" >Videos</label>
+        <label><input name="prefer" value="city-meetups" type="checkbox" class="inline" >City Meetups</label>
+        
+</fieldset>
+
+
+      
+      <fieldset>
+        <label for="bio">Provide a bio:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+
+    </fieldset>
+
+
+    
+    
+
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </div>
+</body>
+</html>
